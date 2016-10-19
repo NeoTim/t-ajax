@@ -1,0 +1,11 @@
+{
+  "name": "t-ajax",
+  "version": "0.0.1",
+  "description": "ajax for teamkerbell electron project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "s.a jo",
+  "license": "MIT"
+}
