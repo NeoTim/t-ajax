@@ -1,6 +1,6 @@
 {
   "name": "t-ajax",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "ajax for teamkerbell electron project",
   "main": "index.js",
   "scripts": {

@@ -4,12 +4,19 @@ const Promise = require('promise');
 
 var server='localhost'
 var port=8080
+/*
+  @TODO 요청을 보내는 함수
+*/
 var sendRequest = function(option, data,cb) {
     var req = http.request(option, cb);
     if (data)
         req.write(data);
     req.end();
 }
+
+/*
+  @TODO post 요청을 보내는 함수
+*/
 
 exports.post = function(url, data) {
     return new Promise(function(resolve, reject) {
@@ -32,6 +39,10 @@ exports.post = function(url, data) {
     })
 }
 
+
+/*
+  @TODO get 요청을 보내는 함수, Session이 있을시
+*/
 exports.get = function(url, session) {
     return new Promise(function(resolve, rejct) {
         var getOption = {
@@ -55,3 +66,19 @@ exports.get = function(url, session) {
     })
 }
 
+/*
+  @TODO get 요청을 보내는 함수
+*/
+exports.get = function(url){
+  return new Promise(function(resolve, rejct) {
+      var getOption = {
+          host: server,
+          port: port,
+          path: url,
+      }
+      sendRequest(getOption, null, (res) => {
+          resolve(res);
+      });
+
+  })
+}
