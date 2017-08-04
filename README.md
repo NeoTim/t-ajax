@@ -1,5 +1,5 @@
 # t-ajax
-Library for performing an asynchronous HTTP (Ajax) request by using Promise
+Library for performing an asynchronous HTTP (Ajax) request with Session by using Promise
 
 ## Install
 `$ npm install --save t-ajax`
